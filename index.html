@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mariela & Nicolas - Invitación de Boda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Delius&family=Great+Vibes&family=Bree+Serif&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Bienvenida -->
+    <section id="bienvenida" class="seccion-bienvenida">
+        <div class="contenedor-bienvenida">
+            <div class="decoracion-floral-top"></div>
+            <div class="tarjeta-bienvenida">
+                <h1>¡Te damos la bienvenida a nuestra invitación!</h1>
+                <p>Elegimos la música para que te acompañe en este recorrido.</p>
+                <p>¿Cómo te gustaría ingresar?</p>
+                <div class="botones-entrada">
+                    <button onclick="entrarConMusica()" class="boton-principal">INGRESAR CON MÚSICA</button>
+                    <button onclick="entrarSinMusica()" class="boton-secundario">INGRESAR SIN MÚSICA</button>
+                </div>
+            </div>
+            <div class="decoracion-floral-bottom"></div>
+        </div>
+    </section>
+
+    <!-- Inicio -->
+    <section id="invitacion-principal" class="seccion-principal oculto">
+        <video autoplay preload="auto" muted loop playsinline class="videoFondo">
+            <source src="assets/video/videoEjemplo.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="nombres">
+        </div>
+        <div class="contador-regresivo">
+            <div class="contenido-contador">
+                <div class="titulo-contador">
+                    <h3>Falta</h3>
+                </div>
+                <div class="contador">
+                    <div class="tiempo-item">
+                        <span id="dias">00</span>
+                        <label>DÍAS</label>
+                    </div>
+                    <div class="tiempo-item">
+                        <span id="horas">00</span>
+                        <label>HORAS</label>
+                    </div>
+                    <div class="tiempo-item">
+                        <span id="minutos">00</span>
+                        <label>MIN</label>
+                    </div>
+                    <div class="tiempo-item">
+                        <span id="segundos">00</span>
+                        <label>SEG</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="seccion-historia oculto" id="seccion-historia">
+        <div class="contenedor-historia ">
+            <img src="assets/image/garden-3.png" alt="Decoración floral" class="decoracion-historia entrada-animada" style="width:120px; margin: 0 auto 20px; display:block;">
+            <h2 class="entrada-animada titulo-historia">Hay Momentos...</h2>
+            <div class="cita-romantica entrada-animada">
+                <p>
+                    En la vida que soñamos y anhelamos con todo el corazón y que, cuando llegan, solo tienen sentido si los compartimos con quienes amamos.
+                </p>
+                <p>
+                    Dios ha guiado nuestros pasos con amor, ha unido nuestras vidas con propósito, y nos ha enseñado que el verdadero amor es paciente, humilde y eterno.
+                </p>
+                <p>
+                    Por eso queremos invitarte a celebrar con nosotros este dia tan esperado, lleno de fe alegria y esperanza.
+                </p>
+                <p>
+                    Porque formas parte de nuestro camino, y compartir este momento con vos lo hará aún más especial.
+                </p>
+                <div class="versiculo entrada-animada">
+                    <p>
+                        "Y sobre todas estas cosas, vestios de amor, que es el vinculo perfecto."
+                    </p>
+                    <small>
+                        Colosenses 3:14
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Imagen 1 -->
+    <section class="imagenTransicion transicion">
+        <img src="assets/image/foto1.png" alt="Novios">
+    </section>
+    
+    <!-- Eventos -->
+    <section class="seccion-eventos oculto" id="seccion-eventos">
+        <img src="assets/image/decoracionSuperior.png" alt="Decoración Superior" class="decoracion-superior entrada-animada" />
+        <div class="contenedor-lugares entrada-animada">
+            <div class="eventos-grid">
+                <div class="evento-card">
+                    <div class="icono-evento-ceremonia">
+                    </div>
+                    <h3>Ceremonia</h3>
+                    <div class="imagen-iglesia">
+                        <img src="assets/image/iglesiaLasHeras.png" alt="Iglesia Las Heras">
+                    </div>
+                    <div class="evento-info">
+                        <div class="etiqueta">DÍA Y HORARIO</div>
+                        <div class="fecha-hora">23 • 11 • 2025 - 12:00hs</div>
+                        <div class="etiqueta">LUGAR</div>
+                        <div class="direccion">"En nuestra amada iglesia Adventista - Las Heras" <br> Córdoba 778 - Las Heras</div>
+                        <div class="botones-evento">
+                            <a class="boton-evento" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDVycThycDFqdWZtYWw0OHJqczdpcjllMGggd2lsc29uYmJveW1vcmVubzkyQG0&tmsrc=wilsonbboymoreno92%40gmail.com">
+                                <span class="icono icono-calendario"></span>
+                                AGENDAR
+                            </a>
+                            <a class="boton-evento" target="_blank" href="https://maps.app.goo.gl/ju8sHFfScoqP9K677">
+                                <span class="icono icono-ubicacion"></span>
+                                ¿CÓMO LLEGAR?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evento-card">
+                    <div class="icono-evento-fiesta"></div>
+                    <h3>Celebración</h3>
+                    <div class="imagen-iglesia">
+                        <img src="assets/image/salonBellaquinta.jpg" alt="Salon Bella Quinta">
+                    </div>
+                    <div class="evento-info">
+                        <div class="etiqueta">DÍA Y HORARIO</div>
+                        <div class="fecha-hora">23 • 11 • 2025 - 14:00hs</div>
+                        <div class="etiqueta">LUGAR</div>
+                        <div class="direccion">"Bella quinta" <br> San Francisco del Monte 6224, Guaymallén</div>
+                        <div class="botones-evento">
+                            <a class="boton-evento" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDVycThycDFqdWZtYWw0OHJqczdpcjllMGggd2lsc29uYmJveW1vcmVubzkyQG0&tmsrc=wilsonbboymoreno92%40gmail.com">
+                                <span class="icono icono-calendario"></span>
+                                AGENDAR
+                            </a>
+                            <a class="boton-evento" target="_blank" href="https://maps.app.goo.gl/Lyg7r5KMTaeb5gwcA">
+                                <span class="icono icono-ubicacion"></span>
+                                ¿CÓMO LLEGAR?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Imagen 2 -->
+    <section class="imagenTransicion transicion">
+        <img src="assets/image/foto1.png" alt="Novios">
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="seccion-info-adicional oculto" id="seccion-info-adicional">
+        <div class="contenedor-info1 entrada-animada">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="icono-info">
+                        <div class="vestidoMujer"></div>
+                        <div class="trajeHombre"></div>
+                    </div>
+                    <h4>Dress Code</h4>
+                    <p>Formal y elegante</p>
+                </div>
+                <div class="info-item">
+                    <div id="icono-confirmacion-lottie" style="width:64px; height:64px; margin:0 auto 20px;"></div>
+                    <h4>Confirmación</h4>
+                    <p>Por favor, ingresa aqui para ver información sobre la tarjeta y confirmacion</p>
+                    <a class="boton-confirmar" href="https://docs.google.com/forms/d/e/1FAIpQLSdIjGVRGfEAuzF2UK9_xNVeb2sEwn0wq3gyon7R_BtYQJYB-Q/viewform?usp=header">CONFIRMAR ASISTENCIA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Imagen 3 -->
+    <section class="imagenTransicion transicion">
+        <img src="assets/image/foto1.png" alt="Novios">
+    </section>
+
+    <!-- Regalos -->
+    <section class="seccion-regalos oculto entrada-animada" id="seccion-regalos">
+        <div class="contenedor">
+            <div class="regalos-card">
+                <div id="icono-caja-lottie" style="width:64px; height:64px; margin:0 auto 20px;"></div>
+                <h4>Regalos</h4>
+                <p>Nuestro mejor regalo es que puedas acompañarnos, pero si lo deseás, podés colaborar con nuestra luna de miel</p>
+                <div class="botones-regalos">
+                    <button class="boton-regalo" onclick="mostrarModalCuenta()">CUENTA BANCARIA</button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Instagram -->
+    <section class="seccion-fotos oculto entrada-animada" id="seccion-fotos">
+        <div class="contenedor">
+            <div class="regalos-card">
+                <div id="icono-camara-lottie" style="width:64px; height:64px; margin:0 auto 20px;"></div>
+                <h4>Etiquetá tus Fotos</h4>
+                <div class="hashtag">#bodaMariyNico</div>
+                <p>¡Preparate para nuestra boda!</p>
+                <p>Etiquetanos en Instagram con nuestro #hashtag en tus fotos y videos.</p>
+                <a class="boton-fotos" href="https://www.instagram.com/explore/search/keyword/?q=%23bodaMariyNico" target="_blank">VER EN INSTAGRAM</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buzón de Deseos -->
+    <section class="seccion-deseos oculto entrada-animada" id="seccion-deseos">
+        <div class="contenedor">
+            <div class="regalos-card">
+                <div id="icono-deseos-lottie" style="width:64px; height:64px; margin:0 auto 20px;"></div>
+                <h4>Buzón de deseos</h4>
+                <p>Nos encantaría leer tus buenos deseos.<br>
+                ¡Déjanos un mensaje que recordaremos por siempre!</p>
+                <div class="botones-regalos">
+                    <a class="boton-regalo" href="https://wa.me/5492615690963?text=¡Hola%20Mari%20y%20Nico!%20Quiero%20desearles..." target="_blank">
+                        Click aquí
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de imagenes -->
+    <section class="seccion-galeria" id="seccion-galeria">
+        <div class="titulo-galeria">
+            <h2 class="nombreNovios">Mariela</h2>
+            <h2 class="y">&</h2>
+            <h2 class="nombreNovios">Nicolás</h2>
+        </div>
+        <div class="galeria-slider">
+            <button class="flecha-galeria izquierda" onclick="cambiarFoto(-1)">
+                <img src="assets/image/siguiente.png" alt="Anterior" class="icono-flecha izquierda">
+            </button>
+            <img id="foto-galeria" src="assets/image/foto1.png" alt="Foto galería" class="foto-galeria">
+            <button class="flecha-galeria derecha" onclick="cambiarFoto(1)">
+                <img src="assets/image/siguiente.png" alt="Siguiente" class="icono-flecha derecha">
+            </button>
+        </div>
+    </section>
+
+    <!-- Musica de Fondo -->
+    <audio id="musica-fondo" loop>
+        <source src="assets/audio/'A Thousand Years' Live (with orchestra) [Twilight OST] - LAYERS CLASSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Animación de corazón durante la carga -->
+    <div id="heart-loader">
+        <div class="heart-animation"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Datos cuenta bancaria -->
+    <div id="modal-cuenta" class="modal-cuenta oculto">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" onclick="cerrarModalCuenta()">&times;</span>
+            <h2>Datos Bancarios</h2>
+            <p><strong>Banco:</strong> Mercado Pago</p>
+            <p><strong>CVU:</strong> 0000003100006507622529</p>
+            <p><strong>Alias:</strong> mariiynico</p>
+            <p><strong>Titular:</strong> Mariela Elizabeth Flores Alvarez</p>
+            <hr class="separador">
+            <p><strong>Banco:</strong> Mercado Pago</p>
+            <p><strong>CVU:</strong> 0000003100006507622529</p>
+            <p><strong>Alias:</strong> mariiynico</p>
+            <p><strong>Titular:</strong> Nicolás Agustín Fernandez Pinna</p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
+    <!-- Boton para pausar la musica -->
+    <div id="boton-musica" class="boton-musica-flotante" onclick="toggleMusica()">
+        <span id="icono-musica">&#10074;&#10074;</span>
+    </div>
+
+    <!-- Footer y menu -->
+    <footer class="footer-menu-final">
+        <nav>
+            <a class="item-menu" href="#invitacion-principal">Inicio</a>
+            <a class="item-menu" href="#seccion-historia">Dedicatoria</a>
+            <a class="item-menu" href="#seccion-eventos">Eventos</a>
+            <a class="item-menu" href="#seccion-info-adicional">Info</a>
+            <a class="item-menu" href="#seccion-regalos">Regalos</a>
+            <a class="item-menu" href="#seccion-fotos">Hashtag</a>
+            <a class="item-menu" href="#seccion-deseos">Buzon de Deseos</a>
+            <a class="item-menu" href="#seccion-galeria">Galería</a>
+        </nav>
+
+        <p style="font-size: 14px; color: #999; padding: 10px;">
+            © 2025 Desarrollado por Josue Flores | <a class="email" href="mailto:josue.flores.dev@gmail.com">josue.flores.dev@gmail.com | <a target="_blank" href="https://wa.me/5492612704469?">+5492612704469</a>
+        </p>
+    </footer>
+
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+</body>
+</html>
